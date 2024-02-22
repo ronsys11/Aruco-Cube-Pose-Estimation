@@ -33,10 +33,12 @@ $ catkin_make
 $ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 $ source ~/.bashrc
 ```
-6. Change the aruco parameter according to your cube in
-```bash
-self.aruco_dict = aruco.Dictionary_get(aruco.DICT_6X6_1000)
-```
+6. Change the following aruco parameter according to your cube:
+* self.marker_size
+* self.offset
+* board_corners - coordinates in the order top left, top right, bottom right, bottom left
+* self.aruco_dict
+  
 7. Download the ROS wrapper for Intel RealSense devices from https://github.com/IntelRealSense/realsense-ros/tree/ros1-legacy
 8. Run the following in a terminal
 ```bash
